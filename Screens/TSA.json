@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "expense_tracker",
+    "slug": "expense_tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "com.tanishq.expensetracker",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "<YOUR_REVERSED_IOS_CLIENT_ID>"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "package": "com.tanishq.expensetracker",
+      "googleServicesFile": "./google-services.json"
+    }
+  },
+  "web": {
+    "favicon": "./assets/favicon.png"
+  }
+}
